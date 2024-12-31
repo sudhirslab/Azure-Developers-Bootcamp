@@ -171,7 +171,7 @@ In this exercise, you created placeholder containers in the Storage account, and
 1. In the terminal, run the following command to create a new .NET project named **BlobManager** in the current folder:
 
     ```
-    dotnet new console --framework net8.0 --name BlobManager --output .
+    dotnet new console --framework net9.0 --name BlobManager --output .
     ```
 
     > **Note**: The **dotnet new** command will create a new **console** project in a folder with the same name as the project.
