@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 public class Program
 {
     //Update the blobServiceEndpoint value that you recorded previously in this lab.        
-     //Update the blobServiceEndpoint value that you recorded previously in this lab.        
     private const string blobServiceEndpoint = "<your-storage-account-endpoint-url>";
 
     //Update the storageAccountName value that you recorded previously in this lab.
