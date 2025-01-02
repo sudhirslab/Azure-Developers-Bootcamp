@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment Gateway</title>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <h1>Pay with Stripe</h1>
+    <button id="payButton">Pay $10</button>
+
+    <script>
+        // Fetch the public key from the backend
+        fetch('/stripe-public-key')
+            .then(response => response.json())
+            .then(data => {
+                // Initialize Stripe with the public key
+                const stripe = Stripe(data.publicKey); // This is the Stripe public key from the server
+
+                // Handle the payment button click
+                document.getElementById('payButton').addEventListener('click', async () => {
+                    const response = await fetch('/create-payment-intent', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                    });
+                    const paymentIntentData = await response.json();
+                    const clientSecret = paymentIntentData.clientSecret;
+
+                    // Confirm the payment with the public key
+                    const result = await stripe.confirmCardPayment(clientSecret, {
+                        payment_method: {
+                            card: {
+                                number: '4242424242424242', // Example test card number
+                                exp_month: '12',
+                                exp_year: '23',
+                                cvc: '123'
+                            }
+                        }
+                    });
+
+                    if (result.error) {
+                        alert('Payment failed: ' + result.error.message);
+                    } else {
+                        alert('Payment succeeded!');
+                    }
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching Stripe public key:', error);
+            });
+    </script>
+</body>
+</html>
