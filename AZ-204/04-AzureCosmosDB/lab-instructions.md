@@ -1,11 +1,11 @@
 ## Developing Solution using Azure Cosmos DB
 
 
----
-lab:
-az204Title: "Lab 04: Construct a polyglot data solution"
-az204Module: "Learning Path 04: Develop solutions that use Cosmos DB storage"
----
+      ---
+      lab:
+      az204Title: "Lab 04: Construct a polyglot data solution"
+      az204Module: "Learning Path 04: Develop solutions that use Cosmos DB storage"
+      ---
 
 ### Lab 04: Construct a polyglot data solution
 
