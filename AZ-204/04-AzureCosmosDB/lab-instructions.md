@@ -1,12 +1,15 @@
+## Developing Solution using Azure Cosmos DB
+
+
 ---
 lab:
-  az204Title: "Lab 04: Construct a polyglot data solution"
-  az204Module: "Learning Path 04: Develop solutions that use Cosmos DB storage"
+az204Title: "Lab 04: Construct a polyglot data solution"
+az204Module: "Learning Path 04: Develop solutions that use Cosmos DB storage"
 ---
 
-# Lab 04: Construct a polyglot data solution
+### Lab 04: Construct a polyglot data solution
 
-## Microsoft Azure user interface
+### Microsoft Azure user interface
 
 Given the dynamic nature of Microsoft cloud tools, you might experience Azure UI changes that occur after the development of this training content. As a result, the lab instructions and lab steps might not align correctly.
 
