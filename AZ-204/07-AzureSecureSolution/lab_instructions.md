@@ -40,7 +40,7 @@ In this lab, you will create a storage account and an Azure Function app that wi
 
 ## Architecture diagram
 
-![Architecture diagram depicting a user accessing resource secrets more securely across services.](./media/Lab07-Diagram.png)
+![Architecture diagram depicting a user accessing resource secrets more securely across services.](../media/Lab07-Diagram.png)
 
 ### Exercise 1: Create Azure resources
 
@@ -72,7 +72,7 @@ In this lab, you will create a storage account and an Azure Function app that wi
 
    The following screenshot displays the configured settings on the **Create a storage account** blade.
 
-   ![Screenshot displaying the configured settings on the Create a storage account blade](./media/l07_create_a_storage_account.png)
+   ![Screenshot displaying the configured settings on the Create a storage account blade](../media/l07_create_a_storage_account.png)
 
 1. On the **Review** tab, review the options that you selected during the previous steps.
 
@@ -108,7 +108,7 @@ In this lab, you will create a storage account and an Azure Function app that wi
 
    The following screenshot displays the configured settings on the **Create key vault** blade.
 
-   ![Screenshot displaying the configured settings on the Create key vault blade](./media/l07_create_key_vault.png)
+   ![Screenshot displaying the configured settings on the Create key vault blade](../media/l07_create_key_vault.png)
 
 1. On the **Access Configuration** tab, change the permission model to **Vault access policy** and then select **Review + create**.
 
@@ -140,7 +140,7 @@ In this lab, you will create a storage account and an Azure Function app that wi
 
    The following screenshot displays the configured settings in the **Create Function App** blade.
 
-   ![Screenshot displaying the configured settings on the Create Function App blade](./media/l07_create_function_app.png)
+   ![Screenshot displaying the configured settings on the Create Function App blade](../media/l07_create_function_app.png)
 
 1. On the **Storage** tab, perform the following actions, and then select **Review + create**:
 
@@ -204,7 +204,7 @@ In this exercise, you created all the resources that you'll use in this lab.
 
    The following screenshot displays the configured settings on the **Create a secret** blade.
 
-   ![Screenshot displaying the configured settings on the Create a secret blade ](./media/l07_create_a_secret.png)
+   ![Screenshot displaying the configured settings on the Create a secret blade ](../media/l07_create_a_secret.png)
 
    > **Note**: Wait for the secret to be created before you move forward with this lab.
 
